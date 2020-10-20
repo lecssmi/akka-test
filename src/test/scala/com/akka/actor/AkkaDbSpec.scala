@@ -20,8 +20,11 @@ class AkkaDbSpec extends FunSpecLike with Matchers{
         val actorRef=TestActorRef(new AkkaDb)
         actorRef  ! SetRequest("first","1")
 
+        actorRef ! SetRequest("second","2")
+
         val actor = actorRef.underlyingActor
         actor.map.get("first") should equal(Some("1"))
+        actor.map.get("second") should equal(Some("2"))
 
       }
 
