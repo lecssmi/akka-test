@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaSbtSettings">
+    <option name="customLauncherEnabled" value="true" />
+    <option name="customLauncherPath" value="E:\sbt-1.4.0\sbt\bin\sbt-launch.jar" />
+    <option name="customVMPath" />
+    <option name="linkedExternalProjectsSettings">
+      <SbtProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/project" />
+          </set>
+        </option>
+        <option name="resolveSbtClassifiers" value="true" />
+        <option name="sbtVersion" value="1.4.0" />
+      </SbtProjectSettings>
+    </option>
+    <option name="vmParameters" value="-Dsbt.boot.directory=C:/Users/shicheng_work_pc/.sbt/boot -Dsbt.global.base=C:/Users/shicheng_work_pc/.sbt -Dsbt.ivy.home=C:/Users/shicheng_work_pc/.ivy2 -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=1081 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=1081 -Dsbt.insecureprotocol=true -Dsbt.repository.config=E:/sbt-1.4.0/sbt/conf/repo.txt" />
+  </component>
+</project>
