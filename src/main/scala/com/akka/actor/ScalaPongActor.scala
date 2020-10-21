@@ -5,8 +5,15 @@ import akka.actor.{Actor, ActorSystem, Props, Status}
 class ScalaPongActor(response:String) extends Actor{
 
   override def receive: Receive = {
-    case "ping" =>sender() ! response
-    case other =>sender() ! Status.Failure(new Exception(s""" unknows message $other"""))
+    case "ping" =>sender() ! {
+      println(s"receive message :ping ")
+      response
+    }
+    case other =>sender() !{
+      println(other)
+      Status.Failure(new Exception(s""" unknows message $other"""))
+    }
+
 
 
   }
